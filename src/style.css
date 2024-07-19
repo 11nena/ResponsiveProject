@@ -3,7 +3,8 @@
 
 body{
   font-family: "Poppins", sans-serif;
-  background: #272044;
+  background: rgba(24, 21, 37, 1);
+  margin: 0;
 }
 
 
@@ -87,17 +88,18 @@ section {
 }
 
 section.secondary {
-  background: rgba(24, 21, 37, 1);
+  background: rgba(39, 32, 68, 1);
 }
 
 header {
   /*height: 900px;*/
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('/images/Banksys-Grafitti-Maedchen-mit-Luftballon.png');
+  background-image: linear-gradient(rgba(24, 21, 37, 0.5), rgba(24, 21, 37, 0.8)), url('/images/Banksys-Grafitti-Maedchen-mit-Luftballon.png');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   color: #FFFFFF;
   padding: 200px 0;
+ 
 }
 
 h1 {
@@ -186,8 +188,7 @@ main p {
 /* footer styling */
 footer {
   color:#FFFFFF;
-  /*background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/Street-Art-Collection-Banksy-2.jpeg');*/
-  background-image: linear-gradient(rgba(39, 32, 68, 0.7), rgba(39,32,68,0.5)), url('/images/Street-Art-Collection-Banksy-2.jpeg');
+  background-image: linear-gradient(rgba(24, 21, 37, 0.8), rgba(24, 21, 37, 0.8)), url('/images/Street-Art-Collection-Banksy-2.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   
@@ -205,7 +206,6 @@ footer p {
   line-height: 24px;
   color: #FFFFFF;
   opacity: 0.4;
-  /*margin: 20px;*/
 }
 
 footer ul {
@@ -223,7 +223,10 @@ footer a {
   cursor: pointer;
 }
 
-
+.author{
+  text-align: center;
+  opacity: 1;
+}
 
 /* responsive queries */
 @media (max-width: 960px) {
@@ -250,6 +253,14 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
   
